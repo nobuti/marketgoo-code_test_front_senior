@@ -114,7 +114,7 @@ const Form = ({ onSubmit = () => {} }) => {
     </div>
 
     <div className="NewPlayerForm-actions">
-      <Button variant="primary" disabled={anyError(errors)} type="submit" className="NewPlayerForm-submit" data-testid="player-submit">Add new player</Button>
+      <Button variant="primary" disabled={anyError(errors)} type="submit" className="NewPlayerForm-submit" data-testid="player-submit">Create player</Button>
     </div>
   </form>
 }

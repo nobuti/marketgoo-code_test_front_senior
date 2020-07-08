@@ -93,7 +93,7 @@ exports[`NewPlayerForm renders properly 1`] = `
         <span
           class="ola_button-text"
         >
-          Add new player
+          Create player
         </span>
       </button>
     </div>

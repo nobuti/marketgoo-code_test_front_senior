@@ -110,17 +110,17 @@ exports[`PlayersList renders properly 1`] = `
           <td
             class="ola_tableCell is-multiline"
           >
-            Jhon
+            Tommy
           </td>
           <td
             class="ola_tableCell is-left"
           >
-            Cobrakay
+            Space
           </td>
           <td
             class="ola_tableCell is-numeric"
           >
-            15946
+            16112
           </td>
           <td
             class="ola_tableCell is-action"
@@ -150,17 +150,17 @@ exports[`PlayersList renders properly 1`] = `
           <td
             class="ola_tableCell is-multiline"
           >
-            Tommy
+            Jhon
           </td>
           <td
             class="ola_tableCell is-left"
           >
-            Space
+            Cobrakay
           </td>
           <td
             class="ola_tableCell is-numeric"
           >
-            16112
+            15946
           </td>
           <td
             class="ola_tableCell is-action"

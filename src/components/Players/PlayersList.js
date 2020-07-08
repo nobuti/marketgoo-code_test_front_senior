@@ -9,6 +9,8 @@ const List = ({ data, isLoading = false, deleteAction = () => {} }) => {
     return <Loading />
   }
 
+  const players = data ? data.sort((a, b) => b.score - a.score) : []
+
   return <Table
     responsive
   >
@@ -39,7 +41,7 @@ const List = ({ data, isLoading = false, deleteAction = () => {} }) => {
       </TableRow>
     </thead>
     <tbody>
-      { data && data.map(player =>
+      { players.map(player =>
         <TableRow
           key={player.id}
           data-testid="row"
