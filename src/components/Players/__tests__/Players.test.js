@@ -32,9 +32,12 @@ describe('Players', () => {
     fetching: false
   }
 
+  const addPlayer = jest.fn()
+  const deletePlayer = jest.fn()
+
   test('renders properly', () => {
     const { container } = render(
-      <Players players={players} />
+      <Players players={players} addPlayer={addPlayer} deletePlayer={deletePlayer} />
     )
 
     expect(container).toMatchSnapshot()
@@ -44,7 +47,7 @@ describe('Players', () => {
 
   test('should show modal properly', () => {
     render(
-      <Players players={players} />
+      <Players players={players} addPlayer={addPlayer} deletePlayer={deletePlayer} />
     )
 
     const button = screen.queryByTestId('players-action')

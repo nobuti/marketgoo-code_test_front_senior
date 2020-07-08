@@ -30,7 +30,7 @@ describe('PlayersList', () => {
     }
   ]
 
-  const deleteAction = jest.fn()
+  const onDelete = jest.fn()
 
   test('renders properly', () => {
     const { container } = render(
@@ -52,12 +52,12 @@ describe('PlayersList', () => {
 
   test('calls deleteAction properly', () => {
     render(
-      <PlayersList data={players} deleteAction={deleteAction} />
+      <PlayersList data={players} onDelete={onDelete} />
     )
 
     const [firstButton] = screen.queryAllByTestId('action')
     fireEvent.click(firstButton)
 
-    expect(deleteAction).toHaveBeenCalledWith(players[0].id)
+    expect(onDelete).toHaveBeenCalledWith(players[0].id)
   })
 })

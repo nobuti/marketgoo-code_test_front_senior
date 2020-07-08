@@ -27,6 +27,7 @@ describe('playersReducer', () => {
 
   it('should remove a player properly', () => {
     const player = {
+      id: 123,
       name: 'Wadus',
       team: 'Wadus',
       score: 10
@@ -35,7 +36,7 @@ describe('playersReducer', () => {
       collection: [player]
     }, {
       type: types.REMOVE_PLAYER,
-      player
+      player: player.id
     })
 
     expect(state.collection.length).toEqual(0)

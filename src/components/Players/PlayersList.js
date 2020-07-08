@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Loading from './PlayersLoading'
 
-const List = ({ data, isLoading = false, deleteAction = () => {} }) => {
+const List = ({ data, isLoading = false, onDelete = () => {} }) => {
   if (isLoading) {
     return <Loading />
   }
@@ -66,7 +66,7 @@ const List = ({ data, isLoading = false, deleteAction = () => {} }) => {
             <ButtonIcon
               as="button"
               variant="primary"
-              onClick={() => deleteAction(player.id)}
+              onClick={() => onDelete(player.id)}
               data-testid="action"
             >
               <Icon
@@ -86,7 +86,7 @@ List.displayName = 'PlayersList'
 List.propTypes = {
   data: PropTypes.array.isRequired,
   isLoading: PropTypes.bool,
-  deleteAction: PropTypes.func
+  onDelete: PropTypes.func
 }
 
 export default List

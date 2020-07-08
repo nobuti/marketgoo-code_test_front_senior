@@ -24,7 +24,7 @@ export const playersReducer = (state = initialState, action) => {
       }
 
     case types.REMOVE_PLAYER:
-      players = state.collection.filter((player) => player.id !== action.player.id)
+      players = state.collection.filter((player) => player.id !== action.player)
 
       return {
         ...state,
