@@ -1,15 +1,27 @@
 export const required = value => {
+  if (value == null) {
+    return false
+  }
+
   return value.trim().length > 0
 }
 
 export const moreThan = length => {
   return value => {
-    return value.length >= length
+    if (value == null) {
+      return false
+    }
+
+    return value.trim().length >= length
   }
 }
 
 export const equalOrBiggerThan = n => {
   return value => {
+    if (value == null) {
+      return false
+    }
+
     if (isNaN(value)) {
       return false
     }
@@ -21,6 +33,12 @@ export const equalOrBiggerThan = n => {
     return +value >= n
   }
 }
+
+export const anyError = error => {
+  return Object.keys(error).length > 0
+}
+
+export const getError = (error, key) => error[key]
 
 export const validate = (state, validations) => {
   return Object.keys(validations).reduce((memo, key) => {
