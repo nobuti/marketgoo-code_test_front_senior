@@ -33,5 +33,6 @@ From here, `components` folder includes all the code related to components. Ever
 The `store` folder includes all reducers and action creators to be used in combination with redux. It includes the action types definition manifest to avoid typos mostly and any other file related to store configuration, like custom middlewares for instance.
 
 ## Improvements
+- Dev environment: To improve the DX, improvements in the dev environment needs to be made. Automattic compilation and browser reload would improve the development experience a lot. Hot module replacement would be the goal in the last term.
 - Legacy browser support: One of the decision I made was to focus the browser support on the greenfield browsers. In a real project, we would need metrics to support this kind of decision. And of course, the code and result should be tested in every platform and browser we support.
 - Offline support: In order to keep the challenge simple, I left it outside of scope, but to provide a better UX, it should convenient to add a persitence layer. This way, when the network goes offline, we can show a list of players. Of course this will add other complexity, but the overall experience will be better in my opinion.
