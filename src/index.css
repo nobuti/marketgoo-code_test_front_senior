@@ -1,18 +1,49 @@
+/* Mini reset for modern browsers */
+
+html,
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
     background-color: whitesmoke;
 }
 
-table {
-    width: 100%;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-#app {
+#App {
     background-color: white;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     padding: 50px;
 }

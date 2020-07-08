@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import socketIOClient from 'socket.io-client'
+
+import '@marketgoo/ola/dist/index.css'
 import './index.css'
 
 import store from './store'
