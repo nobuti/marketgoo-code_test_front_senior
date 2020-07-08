@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title renders properly 1`] = `
+<div>
+  <h1
+    class="ola-title Title"
+    data-testid="h1"
+  >
+    Wadus
+  </h1>
+</div>
+`;

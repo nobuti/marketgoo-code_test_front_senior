@@ -2,19 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import socketIOClient from 'socket.io-client'
 
-import '@marketgoo/ola/dist/index.css'
 import './index.css'
 
 import store from './store'
 import { types } from './store/types'
-
+import Title from './components/Title'
 import List from './components/List'
 const ENDPOINT = 'http://localhost:3000'
 
 const Root = () => {
   return (
     <>
-      <h1>League Champion</h1>
+      <Title>League Champion</Title>
       <List />
     </>
   )
