@@ -1,5 +1,7 @@
 /* Mini reset for modern browsers */
 
+@import '~@marketgoo/ola/dist/index.css';
+
 html,
 body,
 p,
@@ -31,6 +33,7 @@ ul {
 
 html {
   box-sizing: border-box;
+  font-family: -apple-system, system-ui, sans-serif;
 }
 
 *, *::before, *::after {
@@ -38,7 +41,6 @@ html {
 }
 
 body {
-    font-family: system-ui, sans-serif;
     background-color: whitesmoke;
 }
 
