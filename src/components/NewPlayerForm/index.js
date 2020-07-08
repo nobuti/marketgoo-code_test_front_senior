@@ -61,7 +61,7 @@ const Form = ({ onSubmit = () => {} }) => {
 
   const errors = validate(state.values, validations)
 
-  return <form onSubmit={onSubmitForm}>
+  return <form onSubmit={onSubmitForm} data-testid="new-player-form">
     <div className="NewPlayerForm-field">
       <Field
         error={isThereAnyError(errors, 'name')}

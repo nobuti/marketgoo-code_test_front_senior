@@ -2,7 +2,9 @@
 
 exports[`NewPlayerForm renders properly 1`] = `
 <div>
-  <form>
+  <form
+    data-testid="new-player-form"
+  >
     <div
       class="NewPlayerForm-field"
     >

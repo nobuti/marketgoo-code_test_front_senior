@@ -2,10 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import PlayersList from './PlayersList'
+import Players from './Players'
 
 const Container = ({ players }) => {
-  return <PlayersList data={players.collection} isLoading={players.fetching} />
+  return <Players players={players} />
 }
 
 Container.propTypes = {

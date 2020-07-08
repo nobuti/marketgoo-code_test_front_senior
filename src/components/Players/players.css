@@ -1,0 +1,8 @@
+.Players-action {
+    display: flex;
+    padding: 16px 0;
+}
+
+.Players-button {
+    margin-left: auto;
+}
