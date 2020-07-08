@@ -1,0 +1,12 @@
+.NewPlayerForm-field {
+    margin-bottom: var(--size-4);
+}
+
+.NewPlayerForm-actions {
+    display: flex;
+    padding: 16px 0;
+}
+
+.NewPlayerForm-submit {
+    margin-left: auto;
+}

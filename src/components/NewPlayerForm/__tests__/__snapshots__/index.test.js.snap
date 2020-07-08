@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewPlayerForm renders properly 1`] = `
+<div>
+  <form>
+    <div
+      class="NewPlayerForm-field"
+    >
+      <div
+        class="ola_field"
+      >
+        <label
+          class="ola_field-label"
+          for="playerName"
+        >
+          Name
+        </label>
+        <div
+          class="ola_field-input"
+        >
+          <input
+            class="ola_input"
+            data-testid="player-name"
+            id="playerName"
+            name="name"
+            placeholder="Player name"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="NewPlayerForm-field"
+    >
+      <div
+        class="ola_field"
+      >
+        <label
+          class="ola_field-label"
+          for="playerTeam"
+        >
+          Team
+        </label>
+        <div
+          class="ola_field-input"
+        >
+          <input
+            class="ola_input"
+            data-testid="player-team"
+            id="playerTeam"
+            name="team"
+            placeholder="Player team"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="NewPlayerForm-field"
+    >
+      <div
+        class="ola_field"
+      >
+        <label
+          class="ola_field-label"
+          for="playerScore"
+        >
+          Score
+        </label>
+        <div
+          class="ola_field-input"
+        >
+          <input
+            class="ola_input"
+            data-testid="player-score"
+            id="playerScore"
+            name="score"
+            placeholder="Player score"
+            type="number"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="NewPlayerForm-actions"
+    >
+      <button
+        class="ola_button is-primary is-disabled NewPlayerForm-submit"
+        data-testid="player-submit"
+        disabled=""
+        type="submit"
+      >
+        <span
+          class="ola_button-text"
+        >
+          Add new player
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;
