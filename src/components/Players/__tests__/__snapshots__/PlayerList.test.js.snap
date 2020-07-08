@@ -3,8 +3,8 @@
 exports[`PlayersList renders loading properly 1`] = `
 <div>
   <div
+    class="Loading"
     data-testid="loading"
-    style="display: flex; align-items: center;"
   >
     <svg
       class="ola_spinner"
@@ -19,7 +19,8 @@ exports[`PlayersList renders loading properly 1`] = `
       />
     </svg>
     <span
-      style="margin-left: 16px;"
+      class="Loading-label"
+      data-testid="loading-label"
     >
       Loading players
     </span>

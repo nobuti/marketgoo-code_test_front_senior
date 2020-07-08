@@ -1,13 +1,12 @@
 import React from 'react'
-import { Spinner, Table, TableCell, TableRow, ButtonIcon, Icon } from '@marketgoo/ola'
+import { Table, TableCell, TableRow, ButtonIcon, Icon } from '@marketgoo/ola'
 import PropTypes from 'prop-types'
+
+import Loading from './PlayersLoading'
 
 const List = ({ data, isLoading = false, deleteAction = () => {} }) => {
   if (isLoading) {
-    return <div style={{ display: 'flex', alignItems: 'center' }} data-testid="loading">
-      <Spinner />
-      <span style={{ marginLeft: 16 }}>Loading players</span>
-    </div>
+    return <Loading />
   }
 
   return <Table

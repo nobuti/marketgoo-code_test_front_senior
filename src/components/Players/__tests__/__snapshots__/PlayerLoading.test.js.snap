@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayersLoading renders properly 1`] = `
+<div>
+  <div
+    class="Loading"
+    data-testid="loading"
+  >
+    <svg
+      class="ola_spinner"
+      height="28"
+      viewBox="0 0 28 28"
+      width="28"
+    >
+      <circle
+        cx="14"
+        cy="14"
+        r="12"
+      />
+    </svg>
+    <span
+      class="Loading-label"
+      data-testid="loading-label"
+    >
+      Loading players
+    </span>
+  </div>
+</div>
+`;

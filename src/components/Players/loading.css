@@ -1,0 +1,8 @@
+.Loading {
+    display: flex;
+    align-items: center;
+}
+
+.Loading-label {
+    margin-left: 16px;
+}
