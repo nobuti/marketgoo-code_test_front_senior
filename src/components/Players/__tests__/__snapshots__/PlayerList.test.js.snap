@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayersList renders loading properly 1`] = `
+<div>
+  <div
+    data-testid="loading"
+    style="display: flex; align-items: center;"
+  >
+    <svg
+      class="ola_spinner"
+      height="28"
+      viewBox="0 0 28 28"
+      width="28"
+    >
+      <circle
+        cx="14"
+        cy="14"
+        r="12"
+      />
+    </svg>
+    <span
+      style="margin-left: 16px;"
+    >
+      Loading players
+    </span>
+  </div>
+</div>
+`;
+
+exports[`PlayersList renders properly 1`] = `
+<div>
+  <div
+    class="ola_table-container is-responsive"
+  >
+    <table
+      class="ola_table"
+    >
+      <thead>
+        <tr
+          class="ola_tableRow"
+        >
+          <th
+            class="ola_tableCell is-left"
+          >
+            Player
+          </th>
+          <th
+            class="ola_tableCell is-left"
+          >
+            Team
+          </th>
+          <th
+            class="ola_tableCell is-numeric"
+          >
+            Score
+          </th>
+          <th
+            class="ola_tableCell is-action"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="ola_tableRow"
+          data-testid="row"
+        >
+          <td
+            class="ola_tableCell is-multiline"
+          >
+            Peter
+          </td>
+          <td
+            class="ola_tableCell is-left"
+          >
+            Pandas
+          </td>
+          <td
+            class="ola_tableCell is-numeric"
+          >
+            16921
+          </td>
+          <td
+            class="ola_tableCell is-action"
+          >
+            <button
+              class="ola_buttonIcon is-primary"
+              data-testid="action"
+            >
+              <svg
+                class="ola_icon is-small"
+                fill-rule="evenodd"
+                height="28"
+                viewBox="0 0 28 28"
+                width="28"
+              >
+                <path
+                  d="M22.92 4c.296 0 .55.105.762.314.212.21.318.462.318.758s-.106.55-.318.762l-8.17 8.174 8.17 8.166c.212.212.318.464.318.754 0 .296-.106.549-.318.758-.212.21-.466.314-.762.314s-.547-.103-.753-.31l-8.171-8.166-8.163 8.166c-.206.207-.46.31-.761.31a1.04 1.04 0 0 1-.758-.31A1.02 1.02 0 0 1 4 22.936c0-.301.103-.555.31-.762l8.17-8.166-8.17-8.174A1.026 1.026 0 0 1 4 5.08c0-.296.105-.55.314-.762.21-.212.462-.318.758-.318.295 0 .55.106.761.318l8.163 8.174 8.17-8.174A1.03 1.03 0 0 1 22.92 4z"
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="ola_tableRow"
+          data-testid="row"
+        >
+          <td
+            class="ola_tableCell is-multiline"
+          >
+            Jhon
+          </td>
+          <td
+            class="ola_tableCell is-left"
+          >
+            Cobrakay
+          </td>
+          <td
+            class="ola_tableCell is-numeric"
+          >
+            15946
+          </td>
+          <td
+            class="ola_tableCell is-action"
+          >
+            <button
+              class="ola_buttonIcon is-primary"
+              data-testid="action"
+            >
+              <svg
+                class="ola_icon is-small"
+                fill-rule="evenodd"
+                height="28"
+                viewBox="0 0 28 28"
+                width="28"
+              >
+                <path
+                  d="M22.92 4c.296 0 .55.105.762.314.212.21.318.462.318.758s-.106.55-.318.762l-8.17 8.174 8.17 8.166c.212.212.318.464.318.754 0 .296-.106.549-.318.758-.212.21-.466.314-.762.314s-.547-.103-.753-.31l-8.171-8.166-8.163 8.166c-.206.207-.46.31-.761.31a1.04 1.04 0 0 1-.758-.31A1.02 1.02 0 0 1 4 22.936c0-.301.103-.555.31-.762l8.17-8.166-8.17-8.174A1.026 1.026 0 0 1 4 5.08c0-.296.105-.55.314-.762.21-.212.462-.318.758-.318.295 0 .55.106.761.318l8.163 8.174 8.17-8.174A1.03 1.03 0 0 1 22.92 4z"
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="ola_tableRow"
+          data-testid="row"
+        >
+          <td
+            class="ola_tableCell is-multiline"
+          >
+            Tommy
+          </td>
+          <td
+            class="ola_tableCell is-left"
+          >
+            Space
+          </td>
+          <td
+            class="ola_tableCell is-numeric"
+          >
+            16112
+          </td>
+          <td
+            class="ola_tableCell is-action"
+          >
+            <button
+              class="ola_buttonIcon is-primary"
+              data-testid="action"
+            >
+              <svg
+                class="ola_icon is-small"
+                fill-rule="evenodd"
+                height="28"
+                viewBox="0 0 28 28"
+                width="28"
+              >
+                <path
+                  d="M22.92 4c.296 0 .55.105.762.314.212.21.318.462.318.758s-.106.55-.318.762l-8.17 8.174 8.17 8.166c.212.212.318.464.318.754 0 .296-.106.549-.318.758-.212.21-.466.314-.762.314s-.547-.103-.753-.31l-8.171-8.166-8.163 8.166c-.206.207-.46.31-.761.31a1.04 1.04 0 0 1-.758-.31A1.02 1.02 0 0 1 4 22.936c0-.301.103-.555.31-.762l8.17-8.166-8.17-8.174A1.026 1.026 0 0 1 4 5.08c0-.296.105-.55.314-.762.21-.212.462-.318.758-.318.295 0 .55.106.761.318l8.163 8.174 8.17-8.174A1.03 1.03 0 0 1 22.92 4z"
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

@@ -32,6 +32,8 @@ From here, `components` folder includes all the code related to components. Ever
 
 The `store` folder includes all reducers and action creators to be used in combination with redux. It includes the action types definition manifest to avoid typos mostly and any other file related to store configuration, like custom middlewares for instance.
 
+Related to the store and redux, the Container and Presentational pattern is used. Even Dan Abramov doesn't recommend it anymore, I think this pattern is still handy and relevant, and allows us to test components more easily.
+
 ## CSS conventions
 
 ### Architecture
