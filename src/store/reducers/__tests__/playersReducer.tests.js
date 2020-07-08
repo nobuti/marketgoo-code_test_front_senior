@@ -5,7 +5,7 @@ describe('playersReducer', () => {
   it('should return the initial state', () => {
     expect(playersReducer(undefined, {})).toEqual({
       collection: [],
-      fetching: false
+      fetching: true
     })
   })
 

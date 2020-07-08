@@ -2,7 +2,7 @@ import { types } from '../types'
 
 const initialState = {
   collection: [],
-  fetching: false
+  fetching: true
 }
 
 export const playersReducer = (state = initialState, action) => {
