@@ -1,8 +1,8 @@
-This is a refactor exercise and his goal is to overall improve the proposed app. It shows a list of players with data about their team and their league score and we want you to propose solutions and implement them in order to improve the architecture, testability and UX. It's intentionally crappy so you can shine bright :) 
+This is a refactor exercise and his goal is to overall improve the proposed app. It shows a list of players with data about their team and their league score and we want you to propose solutions and implement them in order to improve the architecture, testability and UX. It's intentionally crappy so you can shine bright :)
 
 ## Requirements
 
-There are some mandatory constraints you have to attend: 
+There are some mandatory constraints you have to attend:
 
 - Update the management of the state using REDUX and use a library for the management of the requests (like redux thunk or sagas)
 - Use our component library Ola to build the interface [https://github.com/marketgoo/Ola](https://github.com/marketgoo/Ola)
@@ -21,6 +21,8 @@ There are some mandatory constraints you have to attend:
 
 - Donwload repository
 - npm i ( node v12 required )
+
+⚠️ In case you get the message `Please install sqlite3 package manually` try to install `sqlite3` globally. Then delete the `node_modules` folder and reinstall again. See here for more help: https://github.com/sequelize/sequelize/issues/11174
 
 ## Run app locally
 
@@ -82,3 +84,4 @@ There are some mandatory constraints you have to attend:
 To submit your solution to the proposed test, send us an email to [dev@marketgoo.com](mailto:dev@marketgoo.com) with a link to your repository with your solution. Use that email to tell us anything you want about your solution (proposed solution, reasoning...).
 
 You can also use that same email ([dev@marketgoo.com](mailto:dev@marketgoo.com)) for any doubt or problem you may have, do not hesitate to ask whatever you want.
+
