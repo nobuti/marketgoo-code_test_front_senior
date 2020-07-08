@@ -27,12 +27,15 @@ The entry point is the src/index.js file, that renders the whole application to 
 From here, `components` folder includes all the code related to components. Every component is namespaced in its own folder. For instance, you can find a select folder inside components that includes:
 
 - an index.js for the root component
+- some css styles in one or more files
 - different js files for any child component
 - a `__tests__` folder with tests and snapshots files
 
 The `store` folder includes all reducers and action creators to be used in combination with redux. It includes the action types definition manifest to avoid typos mostly and any other file related to store configuration, like custom middlewares for instance.
 
 Related to the store and redux, the Container and Presentational pattern is used. Even Dan Abramov doesn't recommend it anymore, I think this pattern is still handy and relevant, and allows us to test components more easily.
+
+The `utils` folder contains utility functions and helpers ready to be reused across the application.
 
 ## CSS conventions
 
