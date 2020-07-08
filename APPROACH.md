@@ -32,6 +32,109 @@ From here, `components` folder includes all the code related to components. Ever
 
 The `store` folder includes all reducers and action creators to be used in combination with redux. It includes the action types definition manifest to avoid typos mostly and any other file related to store configuration, like custom middlewares for instance.
 
+## CSS conventions
+
+### Architecture
+
+We relies on the amazing [Ola design system](https://github.com/marketgoo/Ola), importing the related styles at the root component. Also, the `src/index.css` file contains all the reset styles as well, needed to start working confidently. The rest of the styles are scoped in every component folder and imported in the js file to take leverage of the css modules. I tend to follow these rules in my projects.
+
+### Naming
+
+I use the BEM convention with some opinated without the fuzzle of underscores. Camelcase and hyphens FTW. Basically, the main architecture division is between components and utilities. Not always have been applied to this project though.
+
+### Utilities
+
+Utilities can be applied directly to any element within a component. Utilities usually encapsulate low-level layout and formatting behavior.
+
+Syntax: `u-<utilityName>`
+
+```
+<div class="u-clear">
+  <a class="u-floatLeft" href="{{url}}">
+    <img class="u-block" src="{{src}}" alt="">
+  </a>
+  <p class="u-textUnderline">
+    …
+  </p>
+</div>
+```
+
+### Components
+
+The CSS responsible for component-specific styling.
+
+Syntax: `[<namespace>-]<ComponentName>[-descendentName][--modifierName]`
+
+This has several benefits when reading and writing HTML and CSS:
+
+- Similar to Block, Element and Modifier, but taking a Component as a first-class citizen.
+- It keeps the specificity of selectors low.
+- It helps to decouple presentation semantics from document semantics.
+
+```
+.MyComponent { /* … */ }
+```
+
+A modifier is a class that changes a certain configuration of the component. Modifier names must be written in camel case and be separated from the component name by two hyphens. The class should be included in the HTML in addition to the base component class.
+
+```
+/* Core button */
+.Button { /* … */ }
+
+/* Default button style */
+.Button--default { /* … */ }
+```
+
+A component descendent is a class that is attached to a descendent node of a component. It's responsible for applying presentation directly to the descendent on behalf of a particular component. Descendent names must be written in camel case.
+
+```
+/* Component */
+.Tweet { /* … */ }
+
+/* Descendants */
+.Tweet-header { /* … */ }
+.Tweet-avatar { /* … */ }
+.Tweet-content { /* … */ }
+```
+
+I use is-stateName to reflect changes to a component's state. The rule here is to not style these classes directly; they should always be used as an adjoining class. This allows that the same state names can be used in multiple contexts, but every component must define its own styles for the state.
+
+```
+.Tweet { /* … */ }
+.Tweet.is-expanded { /* … */ }
+```
+
+### Component Variables
+
+Custom properties are global. Components should not expose the internal structure. Variables used in components should have a flat structure after their namespace.
+
+Syntax: `--ComponentName[-descendant|--modifier][-onState]-(cssProperty|variableName)`
+
+```
+:root {
+  --ComponentName-backgroundColor
+  --ComponentName-descendant-backgroundColor
+  --ComponentName--modifier-backgroundColor
+  --ComponentName-onHover-backgroundColor
+  --ComponentName-descendant-onHover-backgroundColor
+}
+```
+
+### Theme Variables
+Non-component variables must be written in camel case
+
+```
+:root {
+  --fontSize: 16px;
+  --fontFamily: sans-serif;
+  --lineHeight: 1.4;
+
+  --spaceSmall: 10px;
+  --spaceMedium: 15px;
+  --spaceLarge: 20px;
+}
+```
+
 ## Improvements
 - Dev environment: To improve the DX, improvements in the dev environment needs to be made. Automattic compilation and browser reload would improve the development experience a lot. Hot module replacement would be the goal in the last term.
 - Legacy browser support: One of the decision I made was to focus the browser support on the greenfield browsers. In a real project, we would need metrics to support this kind of decision. And of course, the code and result should be tested in every platform and browser we support.
